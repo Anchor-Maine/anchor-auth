@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "anchor-auth"
+version = "0.1.0"
+description = "Shared Flask login-gate helpers for Anchor apps (safe-next redirect guard, lockout, constant-time credential check, session-cookie config)."
+requires-python = ">=3.9"
+dependencies = ["flask>=3.0"]
+
+[project.optional-dependencies]
+dev = ["pytest>=8.0"]
+
+[tool.setuptools]
+packages = ["anchor_auth"]
